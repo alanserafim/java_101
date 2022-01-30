@@ -20,17 +20,46 @@
 
 # Tipos primitivos em java
 
-    int: inteiro
+    int: inteiro (32 bits / positivos e negativos até 2 bilhões)
 
     double: número flutuante
+
+    long: ...L (64 bits maior que dois bilhões)
+        		long numeroGrande = 32323233232323L;
+
+    short: (16 bits até 32 mil)
+        short valorPequeno = 2131;
+
+    byte: (até 127)
+        byte b = 127;
+
+    float (32 bits)
+    float preco = 13.5f 
+
+    char variavel = 'a'; ---> guarda um único caractere
+
+    String variavel = "Nome Completo";
 
     
 # Operações matemáticas
 
 Divisão: para que o resulta seja um número de ponto flutuante deve-se declarara o divisor como ponto flutuante.
 
+        // divisão inteira
+        int divisao1 = 4/2;
+
+        // divisão fracionária
         double divisao3 = 5.0 / 2;
-		System.out.println(divisao3);
+        System.out.println(divisao3);
+
+
+
+# Conversões matemáticas
+
+Inteiro para double: compilador aceita (double numero = 1;)
+
+double para inteiro: sem perda de precisão - compilador não aceita; 
+                     com perda de precisão - por meio do casting (int valor = (int) flutuante)
 
 
 
