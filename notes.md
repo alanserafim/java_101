@@ -18,6 +18,25 @@
 
 * Para executar: java Programa
 
+* Variáveis devem ser declaradas dentro do escopo
+
+* No java não existem valor padrão das variáveis, todas devem ser inicializadas.
+
+## Atalhos do Eclipse
+
+main + ctrl + espaço
+    
+    para gerar o método main
+
+ctrl + shift + f
+    
+    para formatar o código fonte
+
+sysout + ctrl + espaço
+    
+    para gerar a instrução System.out.println()
+
+
 # Tipos primitivos em java
 
     int: inteiro (32 bits / positivos e negativos até 2 bilhões)
@@ -39,6 +58,11 @@
     char variavel = 'a'; ---> guarda um único caractere
 
     String variavel = "Nome Completo";
+
+    boolean = true or false
+
+    expressão booleana
+        boolean = variavel == outraVariavel;
 
     
 # Operações matemáticas
@@ -62,7 +86,6 @@ double para inteiro: sem perda de precisão - compilador não aceita;
                      com perda de precisão - por meio do casting (int valor = (int) flutuante)
 
 
-
 # Instruções
 
 ## System.out.println()
@@ -72,23 +95,77 @@ Comando para imprimir algo na tela.
     System.out.println("Meu salário é " + salario);
 
 
+## Relacionais e lógicos
+
+    >= : maior ou igual
+    <= : menor ou igual
+    == : igual
+    || : ou
+    &&: e
 
 
 
+## Condicionais
+
+# IF
+
+    if (variavel >= 10){
+        primeira condição
+    } else {
+        if (variavel >= 20) {
+            segunda condição
+        } else {
+            condição final
+        }
+    }
 
 
+# SWITCH CASE
+
+        int mes = 3;
+		
+		switch (mes) {
+			case 1:
+				System.out.println("O mês é Janeiro");
+				break;
+			case 2:
+				System.out.println("O mês é Fevereiro");
+				break;
+			case 3: 
+				System.out.println("O mês é Março");
+				break;
+			default:
+				System.out.println("Mês inválido");
+				break;
+		}
+    
+
+# LAÇOS
+
+## WHILE
+
+        int contador = 1;
+	    while(contador <= 10) {
+			System.out.println(contador);
+			//contador = contador + 1;
+			//contador += 1;
+			contador++;
+		}
+
+## FOR
+
+        for(int contador = 0; contador <=10; contador++) {
+			System.out.println(contador);
+		}
 
 
+# FOR ENCADEADO
 
+    for(int multiplicador = 1; multiplicador <= 10; multiplicador++) {
+		for(int contador = 1; contador <= 10; contador++) {
+				System.out.print(multiplicador * contador);
+				System.out.print(" ");
+		}
+       	System.out.println();
+	}
 
-
-
-
-
-
-<br><br><br><br><br><br>
-### git 
-git config --local user.name "alanserafim"
-git config --local user.email "alan.serafim@fatec.sp.gov.br"
-git add .
-git commit -m "Lesson X"
